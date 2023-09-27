@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState,useEffect } from 'react';
+import { useEffect } from 'react';
 import './App.css'
 import {fetchDataFromApi} from "./utils/api";
 
@@ -20,7 +19,7 @@ import { BrowserRouter,Route,Routes } from 'react-router-dom';
 function App() {
 
   const dispatch = useDispatch();
-  const {url} = useSelector((state)=> state.home);
+  useSelector((state) => state.home);
   //console.log("urrll",url.total_pages);
 
   const fetchApiConfig = () =>{

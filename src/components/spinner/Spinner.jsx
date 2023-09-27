@@ -1,7 +1,6 @@
-import React from "react";
-
 import "./style.scss";
 
+// eslint-disable-next-line react/prop-types
 const Spinner = ({ initial }) => {
     return (
         <div className={`loadingSpinner ${initial ? "initial" : ""}`}>
